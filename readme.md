@@ -1,5 +1,7 @@
 # ⚡ PyTerminal: Python Based Smart Terminal  
 
+PyTerminal is a Python CLI terminal that behaves like a real shell (ls, cd, pwd, mkdir, rm, mv, cat, system metrics, processes, help, exit) with a clean Rich UI and an AI mode (!ai) powered by Google Gemini function-calling. In AI mode the model can decide to call declared functions (each mapping to your terminal commands), your code executes them, you capture the result, feed the result back to Gemini, and Gemini returns a final natural-language summary. This creates an agentic loop: the model reasons, recommends an action, your program runs it, then the model integrates the execution result into a friendly reply. The function-calling flow follows Gemini’s official pattern.
+
 An **AI-powered terminal emulator** that reimagines the classic Linux shell by combining:  
 
 - 🖥️ **Custom Linux-like Commands** (`ls`, `cat`, `echo`, `cd`, …)  
