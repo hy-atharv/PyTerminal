@@ -12,6 +12,13 @@ This project transforms a terminal into an **autonomous shell agent** where the 
 
 ---
 
+## 📹 Demo Video  
+
+See the PyTerminal in action:  
+👉 [**Watch Now**](https://youtu.be/D3J5pLw-V3Q)  
+
+---
+
 ## ✨ Features  
 
 - **Command Parser & Executor**  
@@ -26,7 +33,11 @@ This project transforms a terminal into an **autonomous shell agent** where the 
   - Real-time printing **and** output capturing via `StringIO`.  
   - Perfectly suited for AI orchestration.  
 
-- **AI-Powered Agentic Behavior (Gemini API)**  
+- **AI-Powered Agentic Behavior (Gemini API)**
+ <p align="center">
+    <img src="https://ai.google.dev/static/gemini-api/docs/images/function-calling-overview.png" alt="Watch Demo" width="600"/>
+</p>
+
   - Exposes terminal commands as **functions callable by Gemini**.  
   - Although **currently executing one command at a time**, Gemini can also chain multiple commands in future, interpret outputs, and autonomously achieve user goals.  
   - Example:  
@@ -37,18 +48,15 @@ This project transforms a terminal into an **autonomous shell agent** where the 
 
 ## 🧠 Tech Stack  
 
-- **Python** → Core language  
-- **Rich** → Beautiful console output  
-- **StringIO** → Output capturing  
-- **OS / Pathlib** → File system navigation  
-- **Gemini API (Function Calling)** → AI-driven terminal agent  
-
----
-
-## 📹 Demo Video  
-
-See the Agentic AI Terminal in action:  
-👉 [**Watch Now**](https://youtu.be/D3J5pLw-V3Q)  
+- **Python** — Core language.
+- **rich** — Beautiful, responsive console output (Panel, Table, Prompt, pager).
+- **psutil** — System monitoring (CPU, memory, process listing).
+- **shutil** & **os / pathlib** — File and directory operations and path resolution (move/copy/remove, `_resolve_path`).
+- **StringIO** (`io.StringIO`) — Capture command output for the AI feedback loop.
+- **google-genai** (`genai`, `google.genai.types`) — Gemini client and function-calling integration.
+- **python-dotenv** — Load `GEMINI_API_KEY` securely from `.env`.
+- **pyreadline3** / **prompt_toolkit** (optional) — Command history and auto-completion on Windows / cross-platform.
+- **stdlib helpers** — `shlex`, `sys`, `json`, `shutil`, `subprocess` where needed.  
 
 ---
 
