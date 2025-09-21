@@ -70,8 +70,8 @@ See the PyTerminal in action:
 
 **1. Clone the repository**
 ```
-git clone https://github.com/your-username/agentic-ai-terminal.git
-cd agentic-ai-terminal
+git clone https://github.com/hy-atharv/PyTerminal.git
+cd PyTerminal
 ```
 
 **2. Create virtual environment**
